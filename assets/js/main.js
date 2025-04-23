@@ -54,3 +54,14 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+function downloadResume() {
+    window.open('https://drive.google.com/file/d/12185CCItrTKX4MOeK-yJoMg6f3XenhTV/view', '_blank');
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/uc?export=download&id=12185CCItrTKX4MOeK-yJoMg6f3XenhTV';
+    link.download = 'Alok Kumar Das_fw17_0471.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
